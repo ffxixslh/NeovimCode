@@ -66,7 +66,6 @@ map("i", "jk", "<Esc>", opts("Escape"))
 map("i", "jj", "<Esc>", opts("Escape"))
 
 -- General
-map({ "n", "x" }, "~", action("whichkey.show"), opts("Which Key"))
 map("n", "<Esc>", clear_search, opts("Clear search highlight"))
 map("n", "<C-n>", clear_search, opts("Clear search highlight"))
 map("n", "K", action("editor.action.showHover"), opts("Hover"))
