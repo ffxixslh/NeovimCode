@@ -5,7 +5,7 @@ Converted from [VimCode](https://github.com/wojukasz/VimCode).
 Required extensions:
 
 - ["asvetliakov.vscode-neovim"](https://github.com/asvetliakov/vscode-neovim.git): Neovim integration
-- ["VSpaceCode.whichkey"](https://github.com/VSpaceCode/vscode-which-key.git): Discoverable <space> menu
+- ["VSpaceCode.whichkey"](https://github.com/VSpaceCode/vscode-which-key.git): Discoverable \<space\> menu
 
 Recommend extensions:
 
