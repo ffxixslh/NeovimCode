@@ -1,0 +1,11 @@
+{
+  // VS Code will prompt "Do you want to install the recommended extensions?" when
+  // someone opens this repository for the first time.
+  "recommendations": [
+    "asvetliakov.vscode-neovim", // Required: neovim integration
+    "VSpaceCode.whichkey", // Recommended: discoverable <space> menu
+    "RioNoir.gitcharm", // Recommended: JetBrains-like Git management
+    "mhutchie.git-graph", // Recommended: git graph visualization
+    "usernamehw.errorlens" // Optional: inline diagnostic display
+  ]
+}
