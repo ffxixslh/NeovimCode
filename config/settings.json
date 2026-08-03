@@ -723,6 +723,79 @@
     {
       "bindings": [
         {
+          "command": "editor.toggleFold",
+          "key": "a",
+          "name": "Toggle Fold",
+          "type": "command"
+        },
+        {
+          "command": "editor.toggleFoldRecursively",
+          "key": "A",
+          "name": "Toggle Fold Recursively",
+          "type": "command"
+        },
+        {
+          "command": "editor.fold",
+          "key": "c",
+          "name": "Fold",
+          "type": "command"
+        },
+        {
+          "command": "editor.foldRecursively",
+          "key": "C",
+          "name": "Fold Recursively",
+          "type": "command"
+        },
+        {
+          "command": "editor.gotoParentFold",
+          "key": "h",
+          "name": "Parent Fold",
+          "type": "command"
+        },
+        {
+          "command": "editor.gotoNextFold",
+          "key": "j",
+          "name": "Next Fold",
+          "type": "command"
+        },
+        {
+          "command": "editor.gotoPreviousFold",
+          "key": "k",
+          "name": "Previous Fold",
+          "type": "command"
+        },
+        {
+          "command": "editor.foldAll",
+          "key": "M",
+          "name": "Fold All",
+          "type": "command"
+        },
+        {
+          "command": "editor.unfold",
+          "key": "o",
+          "name": "Unfold",
+          "type": "command"
+        },
+        {
+          "command": "editor.unfoldRecursively",
+          "key": "O",
+          "name": "Unfold Recursively",
+          "type": "command"
+        },
+        {
+          "command": "editor.unfoldAll",
+          "key": "R",
+          "name": "Unfold All",
+          "type": "command"
+        }
+      ],
+      "key": "z",
+      "name": "+Fold",
+      "type": "bindings"
+    },
+    {
+      "bindings": [
+        {
           "command": "workbench.action.problems.focus",
           "key": "x",
           "name": "Diagnostics",
@@ -883,11 +956,5 @@
   //     ]
   //   }
   // ],
-  // ──────────────────────────────────────────────────────────────────────────────────────
-  // PERFORMANCE OPTIMISATION - CRITICAL for responsive typing
-  // ──────────────────────────────────────────────────────────────────────────────────────
-  //
-  // This runs the Vim extension in a dedicated thread to prevent typing lag and cursor
-  // delays. This is ESSENTIAL for a good Vim experience in VSCode.
   //
 }
