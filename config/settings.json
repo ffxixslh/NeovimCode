@@ -15,7 +15,10 @@
   //
   // Recommended extensions for Git support:
   // - GitCharm
-  // - Git Graph
+  //
+  // Git bindings are optional examples. Keep VS Code built-in Git commands,
+  // or replace gitcharm.* command IDs with commands from your preferred Git
+  // extension.
   //
   "whichkey.bindings": [
     {
@@ -343,6 +346,8 @@
       "name": "+File / Find",
       "type": "bindings"
     },
+    // Git entries are optional. The current defaults use VS Code built-in Git
+    // commands plus GitCharm for log, blame, file history, and commit actions.
     {
       "bindings": [
         {
@@ -388,13 +393,13 @@
           "type": "command"
         },
         {
-          "command": "git-graph.view",
+          "command": "gitcharm.openLog",
           "key": "l",
           "name": "Git Log",
           "type": "command"
         },
         {
-          "command": "git-graph.view",
+          "command": "gitcharm.openLog",
           "key": "L",
           "name": "Git Log (cwd)",
           "type": "command"

@@ -75,28 +75,28 @@
   // │ WINDOW RESIZING - Ctrl+Arrow Keys (LazyVim: <C-Up/Down/Left/Right>)                │
   // └────────────────────────────────────────────────────────────────────────────────────┘
   //
-  // Resize editor splits using Ctrl+Arrow keys. Only active in Normal mode to avoid
-  // interfering with text editing shortcuts (Ctrl+Left/Right normally jump words).
+  // Resize editor splits using Ctrl+Arrow keys. Only active in editor Normal mode to
+  // avoid interfering with sidebar inputs and text editing shortcuts.
   //
   {
     "key": "ctrl+up",
     "command": "workbench.action.increaseViewHeight",
-    "when": "neovim.mode == normal"
+    "when": "editorTextFocus && !inputFocus && neovim.mode == normal"
   },
   {
     "key": "ctrl+down",
     "command": "workbench.action.decreaseViewHeight",
-    "when": "neovim.mode == normal"
+    "when": "editorTextFocus && !inputFocus && neovim.mode == normal"
   },
   {
     "key": "ctrl+left",
     "command": "workbench.action.decreaseViewWidth",
-    "when": "neovim.mode == normal"
+    "when": "editorTextFocus && !inputFocus && neovim.mode == normal"
   },
   {
     "key": "ctrl+right",
     "command": "workbench.action.increaseViewWidth",
-    "when": "neovim.mode == normal"
+    "when": "editorTextFocus && !inputFocus && neovim.mode == normal"
   },
   // ┌────────────────────────────────────────────────────────────────────────────────────┐
   // │ LINE MOVEMENT - Alt+j/k (LazyVim: <A-j>, <A-k>)                                    │
@@ -275,11 +275,11 @@
     "when": "editorTextFocus && neovim.mode == normal"
   },
   // ┌────────────────────────────────────────────────────────────────────────────────────┐
-  // │ GIT HUNK NAVIGATION - [h, ]h (requires Git or GitLens)                             │
+  // │ GIT HUNK NAVIGATION - [h, ]h (uses VSCode built-in Git)                            │
   // └────────────────────────────────────────────────────────────────────────────────────┘
   //
   // Navigate between git changes/hunks in the current file.
-  // Works with native VSCode git or GitLens extension.
+  // Works with VSCode built-in Git.
   //
   {
     "key": "oem_4 h", // [h = previous git change

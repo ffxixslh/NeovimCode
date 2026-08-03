@@ -5,7 +5,6 @@
     "asvetliakov.vscode-neovim", // Required: neovim integration
     "VSpaceCode.whichkey", // Required: discoverable <space> menu
     "RioNoir.gitcharm", // Recommended: JetBrains-like Git management
-    "mhutchie.git-graph", // Recommended: git graph visualization
     "usernamehw.errorlens" // Optional: inline diagnostic display
   ]
 }

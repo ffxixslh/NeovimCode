@@ -168,7 +168,8 @@ map("n", "<leader>b[", action("workbench.action.previousEditor"), opts("Previous
 map("n", "<leader>b]", action("workbench.action.nextEditor"), opts("Next buffer"))
 map("n", "<leader>`", action("workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"), opts("Alternate buffer"))
 
--- Git. Git Graph and GitCharm commands use the locally installed VSCode extensions.
+-- Git. These mappings are optional; replace GitCharm action IDs with commands
+-- from your preferred VSCode Git extension.
 map("n", "<leader>gg", action("workbench.view.scm"), opts("Git status"))
 map("n", "<leader>gG", action("workbench.view.scm"), opts("Git status (cwd)"))
 map("n", "<leader>gs", action("workbench.view.scm"), opts("Git status"))
@@ -176,8 +177,8 @@ map("n", "<leader>gb", action("gitcharm.openGitAnnotations"), opts("Git blame"))
 map("n", "<leader>gB", action("gitcharm.openLog"), opts("Git browse / log"))
 map("n", "<leader>gd", action("git.openChange"), opts("Git diff"))
 map("n", "<leader>gf", action("gitcharm.showFileHistory"), opts("Current file history"))
-map("n", "<leader>gl", action("git-graph.view"), opts("Git log"))
-map("n", "<leader>gL", action("git-graph.view"), opts("Git log (cwd)"))
+map("n", "<leader>gl", action("gitcharm.openLog"), opts("Git log"))
+map("n", "<leader>gL", action("gitcharm.openLog"), opts("Git log (cwd)"))
 map("n", "<leader>gc", action("gitcharm.commit"), opts("Commit"))
 map("n", "<leader>ghn", action("workbench.action.editor.nextChange"), opts("Next hunk"))
 map("n", "<leader>ghp", action("workbench.action.editor.previousChange"), opts("Previous hunk"))
