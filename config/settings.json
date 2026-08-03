@@ -12,10 +12,10 @@
   //
   // Required extensions:
   // - VSpaceCode.whichkey
-  // 
-  // Recommended extensions for Git support: 
+  //
+  // Recommended extensions for Git support:
   // - GitCharm
-  // - Git Graph 
+  // - Git Graph
   //
   "whichkey.bindings": [
     {
